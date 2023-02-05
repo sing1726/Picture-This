@@ -15,8 +15,57 @@
       <h1>Picture This!</h1>
       <h4>My Really Cool Blog Post</h4>
     </div>
-    <img src="images/museum.jpg" alt="placeholder">
+    <Picture>
+      <source srcset="
+      images\landscape\museum-320_x_180.jpg  1x,
+      images\landscape\museum-640_x_360.jpg 2x,
+      images\landscape\museum-960_x_540.jpg 3x"
+      media="(max-width: 320px)">
 
+
+      <source srcset="
+      images\landscape\museum-480_x_270.jpg 1x,
+      iimages\landscape\museum-960_x_540.jpg 2x,
+      images\landscape\museum-1440_x_810.jpg 3x"
+      media="(max-width: 480px)">
+
+
+      <source srcset="
+      images\landscape\museum-720_x_405.jpg 1x,
+      images\landscape\museum-1440_x_810.jpg 2x,
+      images\landscape\museum-2160_x_1215.jpg 3x"
+      media="(max-width: 720px)">
+
+
+      <source srcset="
+      images\landscape\museum-960_x_540.jpg 1x,
+      images\landscape\museum-1920_x_1080.jpg 2x,
+      images\landscape\museum-2880_x_1621.jpg 3x"
+      media="(max-width: 960px)">
+
+      
+      <source srcset="
+      images\squares\museum-800_x_800.jpeg,
+      images\squares\museum-1600_x_1600.jpeg 2x,
+      images\squares\museum-2400_x_2400.jpeg 3x"
+      media="(min-width: 1600px)"/>      
+
+
+      <source srcset="
+      images\squares\museum-640_x_640.jpeg,
+      images\squares\museum-1280_x_1280.jpeg 2x,
+      images\squares\museum-1920_x_1920.jpeg 3x"
+      media="(min-width: 1280px)"/>
+
+
+      <source srcset="
+      images\squares\museum-480_x_480.jpeg,
+      images\squares\museum-960_x_960.jpg 2x,
+      images\squares\museum-1440_x_1440.jpeg 3x"
+      media="(min-width: 960px)"/>
+
+      <img src="images/museum.jpg" alt="placeholder">
+    </Picture>
   </header>
 </body>
 
